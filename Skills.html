@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:  rgb(84, 67, 74);
+            color:black;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(61, 48, 53);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        nav ul li a:hover{
+            color: rgb(167, 151, 162);
+            font-size: 1.1rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+            
+        }
+        .leftSection{
+          margin: 15px;
+            width: 70%;
+            font-size: 3rem;
+        }
+        .rightSection img{
+            width:80%; 
+            margin:50px;
+            height: 90%;
+          
+        }
+        .buttons{
+              margin-top: 34px;
+        }
+        .buttons button{
+            padding: 9px 14px;
+            border-radius: 22px;
+            color:white;
+            background-color:rgb(56, 42, 52);
+            font-weight: bold;
+            font-size: 21px;
+            margin: 3px;
+            cursor: pointer;
+        }
+        .buttons button:hover{
+            background-color: rgb(95, 75, 87);
+            color:rgb(56, 42, 52); 
+        }
+        .inner{
+            padding-top: 20px ;
+        }
+        .header{
+            text-align: center;
+            position: relative;
+        }
+        .header:after{
+           
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform:translateX(-50%);
+            height: 4px;
+            width: 100px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            grid-gap:1rem;
+            padding: 1rem 80px;
+            font-size: 1.2rem;
+          }
+          .skill-box{
+            padding: 1rem;
+            cursor: pointer;
+          }
+          .skill-title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+
+          }
+          .img{
+            width:90px;
+            height:90px;
+            position: relative;
+            border-radius: 45px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+             
+          }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav> 
+            <div class="left">Vaishnavi's Portfolio</div>
+            <div class="right">
+                <ul>
+                     <li><a href="/">Home</a></li>
+                     <li><a href="About.html">About Me</a></li>
+                     <li><a href="Skills.html">Skills</a></li>
+                     <li><a href="Contact.html">Contact Me</a></li>
+                  
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="inner">
+            <div class="header">
+                <h1>My Skills</h1>
+            </div>
+            <div class="container">
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="web.jpg" class="skill-icon" style="width: 160px; height: 100px;">
+
+                        </div>
+                         <h3>Web Development</h3>
+                    </div>
+                    <p style="text-align: justify;">
+                        Web development is the process of creating websites & web applications. Web developers use technologies like
+                        HTML, CSS and JavaScript to create online experiences,from simple web pages to complete interactive platforms.
+                        The field continuously evolves,requiring developers to stay updated on new technologies.
+                        
+                    </p>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="C++.jpg" class="skill-icon"style="width: 160px; height: 100px;">
+
+                        </div>
+                         <h3>C++</h3>
+                    </div>
+                    <p style="text-align: justify;">
+                        
+                        C++ is a versatile and powerful programming language widely used for system software, game development & applications.
+                         It supports object-oriented programming, polymorphis & allowing developers to create modular & efficient code. 
+                         Its broad industry adoption & compatibility with various platforms make it valuable tool for developers.
+                    </p>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="DSA.jpg" class="skill-icon" style="width: 160px; height: 100px;">
+                            
+
+                        </div>
+                         <h3>Data Structures & Algorithms</h3>
+                    </div>
+                    <p style="text-align: justify;">
+                        Data structures & algorithms are the fundamental building blocks of computer science and programming. Data structures refer to
+                        the ways data is organized & stored in computer's memory, while algorithms are step-by-step instructions for solving specific complex problems 
+                        & creating efficient software solutions.
+                    </p>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="Python.jpg" class="skill-icon" style="width: 160px; height: 100px;" >
+
+                        </div>
+                         <h3>Python</h3>
+                    </div>
+                    <p style="text-align: justify;">
+                        Python is a high-level, versatile programming language known for its simplicity and readability. It offers extensive libraries and frameworks, making
+                         it popular for web development, data analysis, artificial intelligence, and more. It is an excellen choice for both beginners and experienced developers.
+
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="SQL.jpg" class="skill-icon" style="width: 160px; height: 100px;">
+
+                        </div>
+                         <h3>MySQL</h3>
+                    </div>
+                    <p style="text-align: justify;">
+                        SQL (Structured Query Language) is a specialized programming language used for managing and manipulating relational databases.
+                        It enables users to store, retrieve, update & delete data in a structured and efficient manner.It allows developers to perform complex
+                        queries to extract meaningful insights from data.
+                    </p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="C.jpg" class="skill-icon" style="width: 160px; height: 100px;">
+
+                        </div>
+                         <h3>C</h3>
+                    </div>
+                    <p style="text-align: justify;">
+                        C is a widely used, procedural programming language known for its efficiency & versatility. C's simplicity & performance have made it the foundation
+                         for many other programming languages &it remains essential in fields like operating systems, game development & embedded devices.
+                    </p>
+                </div>
+                </div>
+                
+            
+        </div>
+    </main>
+    
+</body>
+</html>

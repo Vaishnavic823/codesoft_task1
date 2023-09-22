@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:  rgb(84, 67, 74);
+            color:black;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(61, 48, 53);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        nav ul li a:hover{
+            color: rgb(167, 151, 162);
+            font-size: 1.1rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+            
+        }
+        .leftSection{
+          margin: 15px;
+            width: 70%;
+            font-size: 3rem;
+        }
+        .rightSection img{
+            width:80%; 
+            margin:50px;
+            height: 90%;
+          
+        }
+        .buttons{
+              margin-top: 34px;
+        }
+        .btn{
+            padding: 9px 14px;
+            border-radius: 22px;
+            color:white;
+            background-color:rgb(56, 42, 52);
+            font-weight: bold;
+            font-size: 21px;
+            margin: 3px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(95, 75, 87);
+            color:rgb(56, 42, 52); 
+        }
+        .ContactForm {
+            font-family: 'Poppins', sans-serif;
+            padding-top: 144px;
+            padding: 120px;
+
+        }
+        .ContactForm h1{
+
+            font-family: Georgia, serif;
+            font-size: 50px;
+           
+        }
+        .ContactForm form div{
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .ContactForm form div input{
+            width: 16vw;
+            border-radius: 5px;
+            margin: 6px;
+            padding: 3px;
+        }
+        #emailHelp{
+            font-size: 11px;         
+            margin:5px;
+        }
+        #form-check{
+            flex-direction: row;
+
+        }
+        #form-check input{
+            width: 25px;
+            margin: 3px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Vaishnavi's Portfolio</div>
+            <div class="right">
+                <ul>
+                     <li><a href="/">Home</a></li>
+                     <li><a href="About.html">About Me</a></li>
+                     <li><a href="Skills.html">Skills</a></li>
+                     <li><a href="Contact.html">Contact Me</a></li>
+                  
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+       <div class="ContactForm">
+        <h1>Contact Me !</h1>
+        <form>
+            <div class="mb-3" style="display: flex; flex-direction: column;">
+                <label for="InputEmail1" class="form-label">Name</label>
+                <input type="name" class="form-control" id="InputEmail1" aria-describedby="emailHelp" style="width: 35vw; 
+                border-radius: 6px; margin:4px;">
+                </div>
+
+            <div class="mb-3" style="display: flex; flex-direction: column;">
+              <label for="InputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" style="width: 35vw; 
+              border-radius: 6px; margin:4px;">
+              <div id="emailHelp" class="form-text">We'll never share your mail & phone with anyone else</div> 
+              </div>
+               
+            <div class="mb-3">
+              <label for="InputPassword1" class="form-label">Phone </label>
+              <input type="phone" class="form-control" id="InputPassword1" style="width: 35vw; 
+              border-radius: 6px; margin:4px;">
+            </div>
+            <div class="mb-3" id="form-check">
+              <input type="checkbox" class="form-check-input">
+              <label class="form-check-label" for="Check1">Check</label>
+            </div>
+            <div class="buttons"></div>
+             <btn type="submit" class="btn btn-primary">Submit</btn>
+             
+           </form>
+           <img src="Conatct.jpg" style="float: right; width: 20%;height: 20%;">
+          
+          </div>
+          
+    </main>
+    
+</body>
+</html>
